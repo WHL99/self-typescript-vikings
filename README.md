@@ -6,26 +6,6 @@
 
 We have learned Object-oriented programming and how `class` and inheritance work in JavaScript. Now let's work with our Viking friends, applying all of the concepts we have just learned.
 
-<br>
-
-## Requirements
-
-- Fork this repo.
-- Clone this repo.
-
-<br>
-
-## Submission
-
-- Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Solved lab"
-$ git push origin master
-```
-
-- Create a Pull Request so that your TAs can check your work.
 
 <br>
 
