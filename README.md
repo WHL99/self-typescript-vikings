@@ -14,9 +14,9 @@ We have learned Object-oriented programming and how `class` and inheritance work
 
 ## Instructions
 
-You will work on the `src/viking.ts` file.
+You will work on the `src/index.ts` file.
 
-Your task is to write the correct code in the `src/viking.ts` file to make the tests pass.
+Your task is to write the correct code in the `src/index.ts` file to make the tests pass.
 
 
 ### Iteration 0: First test
