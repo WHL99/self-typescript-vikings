@@ -11,21 +11,6 @@ We have learned Object-oriented programming and how `class` and inheritance work
 
 
 
-## Test Your Code
-
-This LAB is equipped with unit tests to provide automated feedback on your lab progress. In case you want to check the tests, they are in the `tests/viking.spec.js` file.
-
-
-
-To run the tests and your JavaScript code, open the `SpecRunner.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
-
-
-To see the outputs of the `console.log` in your JavaScript code, open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
-
-<br>
-
-
 
 ## Instructions
 

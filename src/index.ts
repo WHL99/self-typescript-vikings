@@ -40,3 +40,43 @@ class Saxon extends Soldier{
         }
     }
 }
+
+class War {
+    constructor(public vikingArmy:object[]=[],public saxonArmy:object[]=[]){}
+    addViking(Viking:object){
+        this.vikingArmy.push(Viking)
+    }
+    addSaxon(Saxon:object){
+        this.saxonArmy.push(Saxon)
+    }
+    vikingAttack(){
+        let randomSaxon:any = this.saxonArmy[Math.floor(Math.random()*this.saxonArmy.length)]
+        let randomViking:any = this.vikingArmy[Math.floor(Math.random()*this.vikingArmy.length)]
+        let attakResult = randomSaxon.receiveDamage(randomViking.attack())
+        if(randomSaxon.health <= 0){
+            this.saxonArmy.splice(randomSaxon)
+        }
+        return attakResult
+    }
+    saxonAttack(){
+        let randomSaxon:any = this.saxonArmy[Math.floor(Math.random()*this.saxonArmy.length)]
+        let randomViking:any = this.vikingArmy[Math.floor(Math.random()*this.vikingArmy.length)]
+        let attakResult = randomViking.receiveDamage(randomSaxon.attack())
+        if(randomViking.health <= 0){
+            this.vikingArmy.splice(randomViking)
+        }
+        return attakResult
+    }
+    showStatus(){
+        if(this.saxonArmy.length <= 0){
+            return 'Vikings have won the war of the century!'
+        }
+        if(this.vikingArmy.length <= 0){
+            return 'Saxons have fought for their lives and survived another day...'
+        }
+        if(this.vikingArmy.length === 1 && this.saxonArmy.length === 1 ){
+            return 'Vikings and Saxons are still in the thick of battle.'
+        }
+    }
+
+}
